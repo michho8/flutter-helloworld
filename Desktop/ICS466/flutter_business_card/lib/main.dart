@@ -53,13 +53,23 @@ class MyWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: const [
-            Text('123 Main Street'),
-            Text('415-555-0198'),
+            Text(
+              '123 Main Street',
+            ),
+            Text(
+              '(415) 555-0198',
+            ),
           ],
         ),
         const SizedBox(height: 16),
         Row(
-          children: const [],
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const [
+            Icon(Icons.accessibility),
+            Icon(Icons.timer),
+            Icon(Icons.phone_android),
+            Icon(Icons.phone_iphone),
+          ],
         ),
       ],
     );
